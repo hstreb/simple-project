@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.sample</groupId>
 	<artifactId>simple-calculator</artifactId>
-	<version>0.0.2</version>
+	<version>0.2.0-${currentBuild}</version>
 	<name>simple-calculator</name>
 
 	<properties>
@@ -11,6 +11,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<artifactory.url>http://localhost:8081</artifactory.url>
+		<currentBuild>SNAPSHOT</currentBuild>
 	</properties>
 
 	<dependencies>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="org.sample.calculator.CalculatorTest" time="0.009" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="org.sample.calculator.CalculatorTest" time="0.008" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/dev/jdk1.8.0_65/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.65-b01"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/data/dev/github/simple-project/simple-calculator"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/humberto/dev/github/simple-project/simple-calculator"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -38,7 +38,7 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="password" value="password"/>
-    <property name="buildInfoConfig.propertiesFile" value="/tmp/buildInfo553965069393383233.properties"/>
+    <property name="buildInfoConfig.propertiesFile" value="/tmp/buildInfo4173677766357669112.properties"/>
     <property name="user.name" value="humberto"/>
     <property name="java.class.path" value="/usr/dev/maven/boot/plexus-classworlds-2.5.2.jar:/usr/share/java/jayatanaag.jar"/>
     <property name="username" value="admin"/>
@@ -63,6 +63,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.sample.calculator.CalculatorTest" name="subOneAndOneEqualsZero" time="0.009"/>
+  <testcase classname="org.sample.calculator.CalculatorTest" name="subOneAndOneEqualsZero" time="0.008"/>
   <testcase classname="org.sample.calculator.CalculatorTest" name="addOneAndOneEqualsTwo" time="0"/>
 </testsuite>

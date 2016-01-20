@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.sample</groupId>
 	<artifactId>simple-web</artifactId>
-	<version>0.0.1</version>
+	<version>0.2.0-${currentBuild}</version>
 	<name>simple-web</name>
 
 	<properties>
@@ -11,6 +11,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<artifactory.url>http://localhost:8081</artifactory.url>
+		<currentBuild>SNAPSHOT</currentBuild>
 	</properties>
 
 	<dependencies>
@@ -32,7 +33,7 @@
 		<dependency>
 			<groupId>org.sample</groupId>
 			<artifactId>simple-calculator</artifactId>
-			<version>0.0.2</version>
+			<version>0.2.0.RELEASE</version>
 		</dependency>
 	</dependencies>
 
@@ -89,9 +90,27 @@
 				</configuration>
 			</plugin>
 			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-            </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>2.2</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>1.4.1</version>
+				<executions>
+				  <execution>
+				      <id>enforce-maven</id>
+				      <goals>
+				          <goal>enforce</goal>
+				      </goals>
+				  </execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
